@@ -1,0 +1,181 @@
+import 'package:flutter/material.dart';
+void main(){
+  runApp(MyApp());
+}
+class MyApp extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+          backgroundColor: Colors.grey[300],
+          appBar: AppBar(
+            backgroundColor: Colors.amber,
+            leading: Icon(Icons.arrow_back),
+            title: Text('Rooms List'),
+          ),
+          body: SingleChildScrollView(
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 12.0,right: 12.0,left: 12.0),
+                  child: Container(
+                    width: double.infinity,
+                    height: 120.0,
+                    decoration: BoxDecoration(
+                        shape: BoxShape.rectangle,
+                        color: Colors.blueGrey
+                    ),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Image(image: NetworkImage('https://th.bing.com/th/id/OIP._i_pjavyIIMCdd-nZPwuTAHaFI?pid=ImgDet&w=198&h=137&c=7&dpr=1.38',)),
+                        ),
+                        SizedBox(width: 50.0,),
+                        Text('one person',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),),
+                        SizedBox(width: 50.0,),
+                        Icon(Icons.arrow_drop_up_sharp),
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 12.0,right: 12.0,left: 12.0),
+                  child: Container(
+                    width: double.infinity,
+                    height: 120.0,
+                    decoration: BoxDecoration(
+                        shape: BoxShape.rectangle,
+                        color: Colors.blueGrey
+                    ),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Image(image: NetworkImage('https://th.bing.com/th/id/OIP.K3eY0W48IAaRq06kcqGvSgHaE8?pid=ImgDet&w=1024&h=683&rs=1',)),
+                        ),
+                        SizedBox(width: 50.0,),
+                        Text('2 persons',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),),
+                        SizedBox(width: 50.0,),
+                        Icon(Icons.arrow_drop_up_sharp),
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 12.0,right: 12.0,left: 12.0),
+                  child: Container(
+                    width: double.infinity,
+                    height: 120.0,
+                    decoration: BoxDecoration(
+                        shape: BoxShape.rectangle,
+                        color: Colors.blueGrey
+                    ),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Image(image:NetworkImage('https://th.bing.com/th/id/OIP.-_bKROGXyRcxA1UFN0Sw7wHaE8?pid=ImgDet&rs=1',)),
+                        ),
+                        SizedBox(width: 50.0,),
+                        Text('3 persons',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),),
+                        SizedBox(width: 50.0,),
+                        Icon(Icons.arrow_drop_up_sharp),
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 12.0,right: 12.0,left: 12.0),
+                  child: Container(
+                    width: double.infinity,
+                    height: 120.0,
+                    decoration: BoxDecoration(
+                        shape: BoxShape.rectangle,
+                        color: Colors.blueGrey
+                    ),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Image(image: NetworkImage('https://th.bing.com/th/id/R.235cc543126964e23bcb9bb1e742b40c?rik=NKO%2fGIgFsf2BzQ&riu=http%3a%2f%2fwww.arabtravelersforum.com%2fimgDir%2f29%2fbfcd6c08c12e3987f9b9e3d4d7455435travel1.626572.jpg&ehk=3s2MvqjslrKYKl8A7uwgA5bqIXb0qHXfk7nksooph38%3d&risl=&pid=ImgRaw&r=0',)),
+                        ),
+                        SizedBox(width: 50.0,),
+                        Text('super room',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),),
+                        SizedBox(width: 50.0,),
+                        Icon(Icons.arrow_drop_up_sharp),
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 8.0),
+                  child: Container(
+                    color: Colors.amber,
+                    width: double.infinity,
+                    height: 40.0,
+                    child: Row(
+                      children: [
+                        SizedBox(width: 250,),
+                        ElevatedButton(
+                            onPressed: (){},
+                            child: Text('Next')
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 12.0,right: 12.0,left: 12.0),
+                  child: Container(
+                    width: double.infinity,
+                    height: 150.0,
+                    decoration: BoxDecoration(
+                        shape: BoxShape.rectangle,
+                        color: Colors.blueGrey
+                    ),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Image(image: NetworkImage('https://th.bing.com/th/id/OIP.MoB40vbukFmMR9_yosurxQHaEn?pid=ImgDet&w=198&h=123&c=7&dpr=1.38',)),
+                        ),
+                        SizedBox(width: 50.0,),
+                        Text('family room',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),),
+                        SizedBox(width: 50.0,),
+                        Icon(Icons.arrow_drop_up_sharp),
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 12.0,right: 12.0,left: 12.0),
+                  child: Container(
+                    width: double.infinity,
+                    height: 150.0,
+                    decoration: BoxDecoration(
+                        shape: BoxShape.rectangle,
+                        color: Colors.blueGrey
+                    ),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Image(image: NetworkImage('https://th.bing.com/th/id/OIP.l1G5asSLQPHcHObsTS6IwgHaFD?pid=ImgDet&w=902&h=615&rs=1',)),
+                        ),
+                        SizedBox(width: 50.0,),
+                        Text('vip room',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.0),),
+                        SizedBox(width: 50.0,),
+                        Icon(Icons.arrow_drop_up_sharp),
+                      ],
+                    ),
+                  ),
+                ),
+
+              ],
+            ),
+          )
+      ),
+    );
+  }
+}
